@@ -17,9 +17,7 @@ body {
 /* ~~ this fixed width container surrounds all other elements ~~ */
 .container {
 	width: auto;
-	background: #FFF; /* the auto value on the sides, coupled with the width, centers the layout */
-	min-width: 200px;
-	max-width: 1100px;
+	background: #FFF;
 	margin-top: 0;
 	margin-right: auto;
 	margin-bottom: 0;
@@ -37,17 +35,81 @@ body {
 	padding-bottom: 10px;
 	padding-left: 0;
 }
+.content-falun-gong {
+	padding-top: 150px;
+	padding-right: 50px;
+	padding-bottom: 150px;
+	padding-left: 50%;
+	background-image: url(images/slide-falun-gong.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #6B3B24;
+	text-align: right;
+}
+.content-harry-potter {
+	padding-top: 150px;
+	padding-right: 50%;
+	padding-bottom: 150px;
+	background-image: url(images/slide-harry-potter.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: left;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #6B3B24;
+	padding-left: 50px;
+}
+.footer {
+	padding-top: 150px;
+	padding-right: 50%;
+	padding-bottom: 150px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: right;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #6B3B24;
+	background-color: #6B3B24;
+}
+.book {
+	height: auto;
+	width: 200px;
+	transition: transform 0.5s; /* Animation */
+	box-sizing: border-box;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.book:hover {
+	transform: scale(1.1);
+}
 .header {
 	width: auto;
-	height: auto;
+	height: 300px;
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: auto;
 	text-align: center;
 	margin-right: auto;
-	min-width: 200px;
-	max-width: 1100px;
 	visibility: inherit;
+	background-image: url(images/header.jpg);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-color: #4791d2;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #6B3B24;
 }
 -->
   </style>
@@ -56,11 +118,13 @@ body {
     
   <body>
   <div class="container">
-    <div class="header">Falun Gong</div>
-    <div class="content">
-      <h1>Knihy online</h1>
-      <p><a href="zhuan-falun.html"><img src="images/zhuan-falun.jpg" width="300" height="427" /></a> <a href="zhuan-falun-ii.html"><img src="images/zhuan-falun-ii.jpg" alt="" width="300" height="427" border="0" /></a></p>
-    <!-- end .content --></div>
+    <div class="header"></div>
+    <div class="content-falun-gong"> <a href="zhuan-falun.html"><img src="images/zhuan-falun.jpg" width="300" height="427" class="book" /></a> <a href="zhuan-falun-ii.html"><img src="images/zhuan-falun-ii.jpg" alt="" width="300" height="427" class="book" border="0" /></a>    <!-- end .content --></div>
+    <div class="content-harry-potter"> <a href="#"><img src="images/hp1.jpg" alt="" width="687" height="800" class="book" /></a> <a href="#"><img src="images/hp4.jpg" alt="" width="680" height="800" class="book" border="0" /></a>
+      <!-- end .content -->
+    </div>
+    <div class="footer"><!-- end .content -->
+    </div>
   <!-- end .container --></div>
   </body>
   </html>
