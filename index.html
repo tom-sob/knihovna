@@ -3,7 +3,7 @@
 <head>
 <title>Knihovna</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/ico">
-<title>Knihovna</title>
+<title>KNIHOVNA</title>
 <style type="text/css">
 <!--
 body {
@@ -61,16 +61,24 @@ body {
 	padding-left: 50px;
 }
 .footer {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	text-align: right;
-	border-bottom-width: 4px;
-	border-bottom-style: solid;
 	border-bottom-color: #6B3B24;
 	background-color: #6B3B24;
 	color: #FDDDA4;
 	font-family: Arial;
+}
+.header {
+	background-color: #6B3B24;
+	color: #FDDDA4;
+	font-family: Arial;
+	font-size: 25px;
+	letter-spacing: 15px;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+	z-index: 100;
+	position: relative;
+	width: 100%;
 }
 .book {
 	height: auto;
@@ -86,24 +94,6 @@ body {
 .book:hover {
 	transform: scale(1.1);
 }
-.header {
-	width: auto;
-	height: 300px;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: auto;
-	text-align: center;
-	margin-right: auto;
-	visibility: inherit;
-	background-image: url(images/header.jpg);
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-color: #4791d2;
-	border-bottom-width: 4px;
-	border-bottom-style: solid;
-	border-bottom-color: #6B3B24;
-}
 @media (max-width: 600px) {
         .book {
 	width: 150px;
@@ -112,8 +102,24 @@ body {
 	padding-left: 50px;
     	}
 		.content-harry-potter {
-	padding-left: 50px;
+	padding-right: 50px;
     	}
+}
+@media (max-width: 400px) {
+        .book {
+	width: 100px;
+        }
+		.content-falun-gong {
+	padding-left: 15px;
+	padding-right: 15px
+    	}
+		.content-harry-potter {
+	padding-left: 15px;
+	padding-right: 15px;
+	background-image: url(images/slide-harry-potter-mobile.jpg);
+	background-position: center center;
+    	}
+}
 -->
   </style>
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
@@ -121,13 +127,14 @@ body {
     
   <body>
   <div class="container">
-    <div class="header"></div>
+    <div class="header">
+    <!-- end .content --><strong>KNIHOVNA</strong></div>
     <div class="content-falun-gong"> <a href="zhuan-falun.html"><img src="images/zhuan-falun.jpg" width="300" height="427" class="book" /></a> <a href="zhuan-falun-ii.html"><img src="images/zhuan-falun-ii.jpg" alt="" width="300" height="427" class="book" border="0" /></a>    <!-- end .content --></div>
-    <div class="content-harry-potter"> <a href="hp1.html"><img src="images/hp1.jpg" alt="" width="687" height="800" class="book" /></a> <a href="#"><img src="images/hp4.jpg" alt="" width="680" height="800" class="book" border="0" /></a>
+    <div class="content-harry-potter"> <a href="hp1.html"><img src="images/hp1.jpg" alt="" width="478" height="800" class="book" /></a> <a href="#"><img src="images/hp4.jpg" alt="" width="478" height="800" class="book" border="0" /></a>
       <!-- end .content -->
     </div>
     <div class="footer"><!-- end .content -->
-      <table width="99%" border="0" cellspacing="40" cellpadding="0">
+      <table width="100%" border="0" cellspacing="40" cellpadding="0">
         <tr>
           <td align="right" valign="middle"><p>©
             <script>document.write(new Date().getFullYear())</script>
