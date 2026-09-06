@@ -29,6 +29,9 @@ src: url("gar.ttf");
 font-family: "Cas";
 src: url("cas.ttf");
 }
+html, body {
+  scroll-behavior: smooth;
+}
 .back-to-top {
 	position: fixed;
 	bottom: 5em;
@@ -40,7 +43,13 @@ src: url("cas.ttf");
 	padding: 1em;
 	z-index: 999;
 }
-
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 2.5em; 
+        right: 25px; 
+        font-size: 10px; 
+    }
+}
 .back-to-top:hover {    
     background-color: rgba(135, 135, 135, 0.50);
 }
@@ -156,14 +165,14 @@ body,td,th {
 <div id="obsah">
   <h3><a id="obsah"><br>
   Obsah</a></h3>
-<a href="#1_0"><br>
+<a href="#s1_0"><br>
 1.
 Chlapec, který zůstal naživu<br>
-    </a><a href="#2_0">2. Sklo, které zmizelo<br>
+    </a><a href="#s2_0">2. Sklo, které zmizelo<br>
     </a><a href="#3_0">3. Dopisy od nikoho<br>
     </a><a href="#4_0">4. Klíčník<br>
-    </a><a href="#4_0">Buddhovská povaha<br>
-    </a><a href="#5_0">V Tau, aniž by kultivoval Tao<br>
+    </a><a href="#s4_0">Buddhovská povaha<br>
+    </a><a href="#s5_0">V Tau, aniž by kultivoval Tao<br>
     </a><a href="#6_0">Příběh o stvoření člověka z hlíny<br>
     </a><a href="#7_0">Omezení moderní vědy a šíře a hloubka Buddhova Fa<br>
     </a><a href="#8_0">„Všechny praxe se vracejí k jedinému“<br>
@@ -191,7 +200,7 @@ Chlapec, který zůstal naživu<br>
 <p>&nbsp;</p>
 <table border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td><span class="nazev-kapitoly"><a id="1_0"></a><br>
+    <td><span class="nazev-kapitoly"><a id="s1_0"></a><br>
       Kapitola první</span></td>
   </tr>
 </table>
@@ -310,7 +319,7 @@ Chlapec, který zůstal naživu<br>
 <p>&nbsp;</p>
 <table border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td><span class="nazev-kapitoly"><a id="2_0"></a><br>
+    <td><span class="nazev-kapitoly"><a id="s2_0"></a><br>
       Kapitola druhá</span></td>
   </tr>
 </table>
