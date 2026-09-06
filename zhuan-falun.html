@@ -10,6 +10,9 @@
 <meta name="description" content="">
 <meta http-equiv="content-style-type" content="text/css">
 <style>
+html, body {
+  scroll-behavior: smooth;
+}
 @media (max-width: 600px) {
         #telo {
 	padding-right: 20px;
@@ -41,7 +44,13 @@ src: url("timesbold.ttf");
     padding: 1em;
     z-index: 999;
 }
-
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 2.5em; 
+        right: 25px; 
+        font-size: 10px; 
+    }
+}
 .back-to-top:hover {    
     background-color: rgba(135, 135, 135, 0.50);
 }
@@ -105,7 +114,6 @@ img
 	margin: 0;
 }
 </style>
-
 </head>
 <body>
 <div id="telo">
